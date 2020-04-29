@@ -13,8 +13,12 @@
         },
         "categories": {
             "auth": {
-                "ichyappe0c6839b": {
-                    "hostedUIProviderCreds": "[]"
+                "ichyappe0c6839b": {}
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "db0l9ck28dtln",
+                    "type": "cicd"
                 }
             }
         }

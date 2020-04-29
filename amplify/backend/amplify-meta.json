@@ -21,7 +21,7 @@
 				"s3TemplateURL": "https://s3.amazonaws.com/amplify-ichyapp-dev-123620-deployment/amplify-cfn-templates/auth/ichyappe0c6839b-cloudformation-template.yml",
 				"logicalId": "authichyappe0c6839b"
 			},
-			"lastPushTimeStamp": "2020-04-28T20:48:43.073Z",
+			"lastPushTimeStamp": "2020-04-29T17:29:37.891Z",
 			"output": {
 				"AppClientSecret": "10ninomq594u045fj9v850k0vgrm6er5f3sjflsfh9ock5mlq630",
 				"UserPoolId": "us-east-2_HOEilnP2f",
@@ -34,6 +34,30 @@
 				"UserPoolName": "ichyappe0c6839b_userpool_e0c6839b"
 			},
 			"lastPushDirHash": "rePaw0kYax3jyDzwklA5QXzJ6KE="
+		},
+		"userPoolGroups": {
+			"service": "Cognito-UserPool-Groups",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "auth",
+					"resourceName": "ichyappe0c6839b",
+					"attributes": [
+						"UserPoolId",
+						"AppClientIDWeb",
+						"AppClientID",
+						"IdentityPoolId"
+					]
+				}
+			],
+			"lastPushTimeStamp": "2020-04-29T17:29:37.892Z"
+		}
+	},
+	"hosting": {
+		"amplifyhosting": {
+			"service": "amplifyhosting",
+			"type": "cicd",
+			"lastPushTimeStamp": "2020-04-29T17:34:59.304Z"
 		}
 	}
 }
