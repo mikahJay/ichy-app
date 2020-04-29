@@ -10,6 +10,13 @@
             "StackName": "amplify-ichyapp-dev-123620",
             "StackId": "arn:aws:cloudformation:us-east-2:333982774369:stack/amplify-ichyapp-dev-123620/64902e80-896e-11ea-a360-064e3beebd9c",
             "AmplifyAppId": "db0l9ck28dtln"
+        },
+        "categories": {
+            "auth": {
+                "ichyappe0c6839b": {
+                    "hostedUIProviderCreds": "[]"
+                }
+            }
         }
     }
 }
