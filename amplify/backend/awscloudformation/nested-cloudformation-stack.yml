@@ -68,15 +68,15 @@
 				}
 			}
 		},
-		"authichyappe0c6839b": {
+		"authichy9809cec6": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
-				"TemplateURL": "https://s3.amazonaws.com/amplify-ichyapp-dev-123620-deployment/amplify-cfn-templates/auth/ichyappe0c6839b-cloudformation-template.yml",
+				"TemplateURL": "https://s3.amazonaws.com/amplify-ichy-dev-94028-deployment/amplify-cfn-templates/auth/ichy9809cec6-cloudformation-template.yml",
 				"Parameters": {
-					"identityPoolName": "ichyappe0c6839b_identitypool_e0c6839b",
+					"identityPoolName": "ichy9809cec6_identitypool_9809cec6",
 					"allowUnauthenticatedIdentities": false,
-					"resourceNameTruncated": "ichyape0c6839b",
-					"userPoolName": "ichyappe0c6839b_userpool_e0c6839b",
+					"resourceNameTruncated": "ichy9809cec6",
+					"userPoolName": "ichy9809cec6_userpool_9809cec6",
 					"autoVerifiedAttributes": "email",
 					"mfaConfiguration": "OFF",
 					"mfaTypes": "SMS Text Message",
@@ -87,14 +87,14 @@
 					"defaultPasswordPolicy": false,
 					"passwordPolicyMinLength": 8,
 					"passwordPolicyCharacters": "",
-					"requiredAttributes": "birthdate,email,family_name,locale,given_name,phone_number,picture",
+					"requiredAttributes": "email",
 					"userpoolClientGenerateSecret": true,
 					"userpoolClientRefreshTokenValidity": 30,
 					"userpoolClientWriteAttributes": "email",
 					"userpoolClientReadAttributes": "email",
-					"userpoolClientLambdaRole": "ichyape0c6839b_userpoolclient_lambda_role",
+					"userpoolClientLambdaRole": "ichy989809cec6_userpoolclient_lambda_role",
 					"userpoolClientSetAttributes": false,
-					"resourceName": "ichyappe0c6839b",
+					"resourceName": "ichy9809cec6",
 					"authSelections": "identityPoolAndUserPool",
 					"authRoleArn": {
 						"Fn::GetAtt": [
@@ -108,21 +108,10 @@
 							"Arn"
 						]
 					},
-					"useDefault": "defaultSocial",
-					"hostedUI": true,
+					"useDefault": "default",
 					"usernameAttributes": "email, phone_number",
-					"triggers": "{}",
-					"hostedUIDomainName": "ichyappe0c6839b-e0c6839b",
-					"authProvidersUserPool": "",
-					"hostedUIProviderMeta": "[]",
-					"oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:19002/\"],\"LogoutURLs\":[\"http://localhost:19002/\"]}",
 					"userPoolGroupList": "",
-					"parentStack": {
-						"Ref": "AWS::StackId"
-					},
-					"permissions": "",
 					"dependsOn": "",
-					"hostedUIProviderCreds": "[]",
 					"env": "dev"
 				}
 			}
@@ -131,7 +120,7 @@
 			"DependsOn": [
 				"AuthRole",
 				"UnauthRole",
-				"authichyappe0c6839b"
+				"authichy9809cec6"
 			],
 			"Type": "AWS::Lambda::Function",
 			"Properties": {
@@ -214,7 +203,7 @@
 				},
 				"idpId": {
 					"Fn::GetAtt": [
-						"authichyappe0c6839b",
+						"authichy9809cec6",
 						"Outputs.IdentityPoolId"
 					]
 				},

@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "ichyappe0c6839b_identitypool_e0c6839b",
+    "identityPoolName": "ichy9809cec6_identitypool_9809cec6",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "ichyape0c6839b",
-    "userPoolName": "ichyappe0c6839b_userpool_e0c6839b",
+    "resourceNameTruncated": "ichy9809cec6",
+    "userPoolName": "ichy9809cec6_userpool_9809cec6",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -18,13 +18,7 @@
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [],
     "requiredAttributes": [
-        "birthdate",
-        "email",
-        "family_name",
-        "locale",
-        "given_name",
-        "phone_number",
-        "picture"
+        "email"
     ],
     "userpoolClientGenerateSecret": true,
     "userpoolClientRefreshTokenValidity": 30,
@@ -34,9 +28,9 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "ichyape0c6839b_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "ichy989809cec6_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "resourceName": "ichyappe0c6839b",
+    "resourceName": "ichy9809cec6",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -51,15 +45,9 @@
         ]
     },
     "useDefault": "default",
-    "hostedUI": true,
     "usernameAttributes": [
         "email, phone_number"
     ],
-    "triggers": "{}",
     "userPoolGroupList": [],
-    "parentStack": {
-        "Ref": "AWS::StackId"
-    },
-    "permissions": [],
     "dependsOn": []
 }
