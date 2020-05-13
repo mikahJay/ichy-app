@@ -1,38 +1,48 @@
 {
 	"providers": {
 		"awscloudformation": {
-			"AuthRoleName": "amplify-ichy-dev-94028-authRole",
-			"UnauthRoleArn": "arn:aws:iam::333982774369:role/amplify-ichy-dev-94028-unauthRole",
-			"AuthRoleArn": "arn:aws:iam::333982774369:role/amplify-ichy-dev-94028-authRole",
+			"AuthRoleName": "amplify-ichy-stage-102433-authRole",
+			"UnauthRoleArn": "arn:aws:iam::333982774369:role/amplify-ichy-stage-102433-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::333982774369:role/amplify-ichy-stage-102433-authRole",
 			"Region": "us-east-2",
-			"DeploymentBucketName": "amplify-ichy-dev-94028-deployment",
-			"UnauthRoleName": "amplify-ichy-dev-94028-unauthRole",
-			"StackName": "amplify-ichy-dev-94028",
-			"StackId": "arn:aws:cloudformation:us-east-2:333982774369:stack/amplify-ichy-dev-94028/d24e25b0-8e0c-11ea-829e-021e2396e2cc",
-			"AmplifyAppId": "d3gpnmpvbmjp0n"
+			"DeploymentBucketName": "amplify-ichy-stage-102433-deployment",
+			"UnauthRoleName": "amplify-ichy-stage-102433-unauthRole",
+			"StackName": "amplify-ichy-stage-102433",
+			"StackId": "arn:aws:cloudformation:us-east-2:333982774369:stack/amplify-ichy-stage-102433/77ea3df0-9525-11ea-856e-063c30684966",
+			"AmplifyAppId": "d2yi1oy7u9abjt"
+		}
+	},
+	"hosting": {
+		"amplifyhosting": {
+			"service": "amplifyhosting",
+			"type": "cicd",
+			"cicd": "cicd",
+			"lastPushTimeStamp": "2020-05-13T14:25:07.205Z"
 		}
 	},
 	"auth": {
-		"ichy9809cec6": {
+		"ichy1008feb1": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
 			"dependsOn": [],
 			"customAuth": false,
+			"lastPushTimeStamp": "2020-05-13T14:29:40.549Z",
 			"providerMetadata": {
-				"s3TemplateURL": "https://s3.amazonaws.com/amplify-ichy-dev-94028-deployment/amplify-cfn-templates/auth/ichy9809cec6-cloudformation-template.yml",
-				"logicalId": "authichy9809cec6"
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-ichy-stage-102433-deployment/amplify-cfn-templates/auth/ichy1008feb1-cloudformation-template.yml",
+				"logicalId": "authichy1008feb1"
 			},
-			"lastPushTimeStamp": "2020-05-04T13:44:10.092Z",
 			"output": {
-				"AppClientSecret": "19q3ech8k5b0g1sh5i0pabt56tape9bei92v0g5jrl6mgmt0p5a",
-				"UserPoolId": "us-east-2_wQH8X0doQ",
-				"AppClientIDWeb": "6mbdrkkn27uav8hk5r91hebsfk",
-				"AppClientID": "7eud5sb3h6s79m0kt74cev1qrt",
-				"IdentityPoolId": "us-east-2:2fc21138-a617-41e2-9b71-f121584a29e0",
-				"IdentityPoolName": "ichy9809cec6_identitypool_9809cec6__dev",
-				"UserPoolName": "ichy9809cec6_userpool_9809cec6"
+				"AppClientSecret": "1sr9ftuougi15rhhhrmlloirba91s4ps0a5cjue5bo0kqpjcpl8k",
+				"UserPoolId": "us-east-2_wVGF38hsC",
+				"AppClientIDWeb": "2ka6tlojnjbg1onl8ueh2019ei",
+				"AppClientID": "2c2ascrvm3n382rqmhlumvqdtv",
+				"HostedUIDomain": "ichy98d3e1c0-98d3e1c0-stage",
+				"IdentityPoolId": "us-east-2:a0ca4ae4-b02b-4045-be53-d2682b804ed1",
+				"IdentityPoolName": "ichy1008feb1_identitypool_1008feb1__stage",
+				"OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:19002/\"],\"LogoutURLs\":[\"http://localhost:19002/\"]}",
+				"UserPoolName": "ichy1008feb1_userpool_1008feb1"
 			},
-			"lastPushDirHash": "lnejgACWy1vL7i7oZsxGsvsVLH4="
+			"lastPushDirHash": "Qt0XjuOpwx6OiARvTSGvo3DcxQI="
 		}
 	}
 }

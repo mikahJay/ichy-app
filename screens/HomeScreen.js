@@ -3,7 +3,7 @@ import * as React from 'react';
 import { StyleSheet } from 'react-native';
 
 export default function HomeScreen() {
-  return (<Fragment />);
+  return (<div />);
 }
 
 const styles = StyleSheet.create({

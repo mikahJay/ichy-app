@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "ichy9809cec6_identitypool_9809cec6",
+    "identityPoolName": "ichy1008feb1_identitypool_1008feb1",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "ichy9809cec6",
-    "userPoolName": "ichy9809cec6_userpool_9809cec6",
+    "resourceNameTruncated": "ichy1008feb1",
+    "userPoolName": "ichy1008feb1_userpool_1008feb1",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,9 +28,9 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "ichy989809cec6_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "ichy101008feb1_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "resourceName": "ichy9809cec6",
+    "resourceName": "ichy1008feb1",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -44,10 +44,15 @@
             "Arn"
         ]
     },
-    "useDefault": "default",
+    "useDefault": "defaultSocial",
     "usernameAttributes": [
         "email, phone_number"
     ],
     "userPoolGroupList": [],
-    "dependsOn": []
+    "dependsOn": [],
+    "hostedUI": true,
+    "hostedUIDomainName": "ichy98d3e1c0-98d3e1c0",
+    "authProvidersUserPool": [],
+    "hostedUIProviderMeta": "[]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:19002/\"],\"LogoutURLs\":[\"http://localhost:19002/\"]}"
 }

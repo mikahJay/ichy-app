@@ -1,19 +1,51 @@
 {
     "dev": {
         "awscloudformation": {
-            "AuthRoleName": "amplify-ichy-dev-94028-authRole",
-            "UnauthRoleArn": "arn:aws:iam::333982774369:role/amplify-ichy-dev-94028-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::333982774369:role/amplify-ichy-dev-94028-authRole",
+            "AuthRoleName": "amplify-ichy-dev-103845-authRole",
+            "UnauthRoleArn": "arn:aws:iam::333982774369:role/amplify-ichy-dev-103845-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::333982774369:role/amplify-ichy-dev-103845-authRole",
             "Region": "us-east-2",
-            "DeploymentBucketName": "amplify-ichy-dev-94028-deployment",
-            "UnauthRoleName": "amplify-ichy-dev-94028-unauthRole",
-            "StackName": "amplify-ichy-dev-94028",
-            "StackId": "arn:aws:cloudformation:us-east-2:333982774369:stack/amplify-ichy-dev-94028/d24e25b0-8e0c-11ea-829e-021e2396e2cc",
-            "AmplifyAppId": "d3gpnmpvbmjp0n"
+            "DeploymentBucketName": "amplify-ichy-dev-103845-deployment",
+            "UnauthRoleName": "amplify-ichy-dev-103845-unauthRole",
+            "StackName": "amplify-ichy-dev-103845",
+            "StackId": "arn:aws:cloudformation:us-east-2:333982774369:stack/amplify-ichy-dev-103845/1efed9d0-9395-11ea-ba4d-02848c93abf4",
+            "AmplifyAppId": "dj5qd1agrqf84"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "dj5qd1agrqf84",
+                    "type": "cicd"
+                }
+            },
+            "auth": {
+                "ichy1008feb1": {}
+            }
+        }
+    },
+    "stage": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-ichy-stage-102433-authRole",
+            "UnauthRoleArn": "arn:aws:iam::333982774369:role/amplify-ichy-stage-102433-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::333982774369:role/amplify-ichy-stage-102433-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-ichy-stage-102433-deployment",
+            "UnauthRoleName": "amplify-ichy-stage-102433-unauthRole",
+            "StackName": "amplify-ichy-stage-102433",
+            "StackId": "arn:aws:cloudformation:us-east-2:333982774369:stack/amplify-ichy-stage-102433/77ea3df0-9525-11ea-856e-063c30684966",
+            "AmplifyAppId": "d2yi1oy7u9abjt"
         },
         "categories": {
             "auth": {
-                "ichy9809cec6": {}
+                "ichy1008feb1": {
+                    "hostedUIProviderCreds": "[]"
+                }
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d2yi1oy7u9abjt",
+                    "type": "cicd"
+                }
             }
         }
     }
